@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Shared Classes */
+.display-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.primary-btn {
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: var(--primary-fontsize);
+    font-weight: 700;
+    padding: 14px 24px;
+    background-color: var(--btn-color);
+}
+
+:root {
+    --primary-color: #3A3A3A;
+    --secondary-color: #787885;
+    --tertiary-color: #18191F;
+    --primary-fontsize: 1rem;
+    --brand-logo: 1.5rem;
+    --title: 1.75rem;
+    --card-para: .875rem;
+    --banner-title: 3.25rem;
+    --btn-color: #E02C6D;
+}
+
+
+
+
+
+
+header {
+    max-width: 1190px;
+    margin: auto;
+}
+
+nav {
+    padding-top: 40px;
+}
+
+.menu {
+    gap: 34px;
+}
+
+.menu a img {
+    padding-top: 10px;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: var(--primary-fontsize);
+    font-weight: 600;
+    text-align: center;
+}
+
+#mnav-logo {
+    display: none;
+}
+
+.brand-logo {
+    font-size: var(--brand-logo);
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.banner-title {
+    font-size: var(--banner-title);
+    color: var(--primary-color);
+
+}
+
+.banner-desc {
+    font-size: var(--primary-fontsize);
+    font-weight: 500;
+    color: var(--primary-color);
+    margin: 16px 0;
+
+}
+
+.banner-content {
+    max-width: 582px;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.banner-image {
+    max-width: 475px;
+}
+
+.banner-image {
+    background: url(images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    /* background-position: center right; */
+    background-size: contain;
+}
+
+.banner {
+    gap: 130px;
+
+    margin: 40px 0 70px;
+}
+
+
+/* Responsive here */
+@media screen and (max-width:576px) {
+    .display-flex {
+        flex-direction: column-reverse;
+    }
+
+    #navbar,
+    .menu {
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 20px;
+    }
+
+    #mnav-logo {
+        display: block;
+    }
+
+    .banner {
+        background-size: %;
+        background-position: top;
+        padding: 0 15px;
+        gap: 14px;
+        text-align: center;
+    }
+
+    .banner-image {
+        max-width: 257px;
+    }
+
+    .banner-title {
+        font-size: var(--title);
+    }
+
+    .banner-desc {
+        font-size: var(--card-para);
+    }
+
+    .hide {
+        display: none;
+    }
+
+}
+}
