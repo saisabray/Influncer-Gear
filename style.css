@@ -322,3 +322,10 @@ footer {
         font-size: 0.75rem;
     }
 }
+.rombos {
+  width: 100px;          /* বর্গের width */
+  height: 100px;         /* বর্গের height */
+  background: orange;    /* রঙ */
+  transform: rotate(5deg);  /* 45° ঘোরানো */
+  margin: 50px;          /* স্পেসিং */
+}
